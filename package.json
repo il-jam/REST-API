@@ -1,0 +1,19 @@
+{
+  "name": "projekt4",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "pouchdb": "^7.3.0",
+    "pouchdb-find": "^7.3.0"
+  },
+  "description": ""
+}

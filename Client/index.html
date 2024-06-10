@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="#" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TaskApp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">    
+   
+    <script src="client.js"></script>
+
+  </head>
+  
+  <body>
+    <div class="level">
+        <div class="level-item has-text-centered">
+            <label class="label is-size-3">Aufgabenmanagement</label>
+        </div>
+    </div>
+
+    <div class="columns is-centered">
+        <div class="column is-one-quarter">
+            <div class="container">
+                <nav class="panel ">
+                    <p class="panel-heading">Neue Aufgabe</p>
+                    <div class="panel-block">
+                        <div class="field">
+                            <label class="label">Nutzer</label>
+                            <input class="input" id="user" name="user" type="text" placeholder="Gib einen Nutzer ein"></input>
+                        </div>
+                        
+                    </div>
+                    <div class="panel-block">
+                        <div class="field">
+                            <label class="label">Beschreibung</label>
+                            <textarea class="textarea has-fixed-size" id="description" name="description" placeholder="Beschreibe die Aufgabe"></textarea>
+                        </div>
+                        
+                    </div>
+                    <div class="panel-block">
+                        <div class="field">
+                            <label class="label">Dauer</label>
+                            <input class="input" id="duration" name="duration" type="text" placeholder="Gib eine Dauer ein"></input>
+                        </div>
+                        
+                    </div>
+                    <div class="panel-block">
+                        <div class="field">
+                            <label class="label">Datum</label>
+                            <input class="input" id="date" name="date" type="text" placeholder="Gib ein Datum ein"></input>
+                        </div>    
+                    </div>
+                    <div class="panel-block">
+                        <button class="button  is-fullwidth is-primary" id="submit" onclick="postTask()">
+                            Aufgabe hinzufügen
+                        </button>
+                    </div>
+                    
+                </nav>
+                
+
+
+            </div>
+        </div>
+  
+    </div>
+
+
+    <div class="columns is-centered">
+        <div class="column is-one-quarter">
+
+            <div class="level">
+                <div class="level-item has-text-centered">
+                    <label class="label is-size-4">Zeige Aufgaben von Usern an</label>
+                </div>
+                
+            </div>
+            
+            
+
+            <div class="field has-addons ">
+                <div class="control">
+                  <input class="input" id="userFilter" name="userFilter" type="text" placeholder="Gib einen User an">
+                </div>
+                <input class="button is-primary" type="submit" value="Anzeigen" id="btn-finduser" onclick="outputTasksOfUser()">
+                  
+            </div>
+            
+
+
+            <div class="columns">
+            
+                <div class="column ">
+                    <div id="output" ></div>
+                </div>
+
+            </div>
+            
+        </div>
+
+
+        
+    </div>
+        
+    
+
+  </body>
+
+
+</html>

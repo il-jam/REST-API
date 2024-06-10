@@ -1,0 +1,5 @@
+2022/06/29-00:16:46.227 1cbc Recovering log #114
+2022/06/29-00:16:46.227 1cbc Level-0 table #116: started
+2022/06/29-00:16:46.232 1cbc Level-0 table #116: 237 bytes OK
+2022/06/29-00:16:46.248 1cbc Delete type=0 #114
+2022/06/29-00:16:46.249 1cbc Delete type=3 #112
